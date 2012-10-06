@@ -3,7 +3,7 @@
 Plugin Name: Widgets view custom
 Description: Select only the widget you want to use, Customize the widgets list.
 Plugin URI: http://gqevu6bsiz.chicappa.jp
-Version: 1.0.0
+Version: 1.0.1
 Author: gqevu6bsiz
 Author URI: http://gqevu6bsiz.chicappa.jp/author/admin/
 Text Domain: widgets_view_custom
@@ -26,9 +26,9 @@ Domain Path: /languages
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-//load_plugin_textdomain('widgets_view_custom', false, basename(dirname(__FILE__)).'/languages');
+load_plugin_textdomain('widgets_view_custom', false, basename(dirname(__FILE__)).'/languages');
 
-define ('WIDGETS_VIEW_CUSTOM_VER', '1.0.0');
+define ('WIDGETS_VIEW_CUSTOM_VER', '1.0.1');
 define ('WIDGETS_VIEW_CUSTOM_PLUGIN_NAME', 'Widgets view custom');
 define ('WIDGETS_VIEW_CUSTOM_MANAGE_URL', admin_url('options-general.php').'?page=widgets_view_custom');
 define ('WIDGETS_VIEW_CUSTOM_RECORD_NAME', 'widget_view_custom');
@@ -115,7 +115,7 @@ function widgets_view_custom_setting() {
 			<tbody>
 				<tr>
 					<td>
-						<span class="description"><?php _e('Please side by side by dragging.','widgets-view-custom'); ?></span>
+						<span class="description"><?php _e('Please side by side by dragging.','widgets_view_custom'); ?></span>
 						<div id="use" class="widget-list">
 							<?php if(!empty($Data["use"])): ?>
 								<?php widgets_view_custom_lists_create('use', $Data["use"]); ?>

@@ -4,7 +4,7 @@ Donate link:
 Tags: admin, widgets, widget, custom
 Requires at least: 3.4.1
 Tested up to: 3.4.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL2
 
 Select only the widget you want to use, Customize the widgets list.
@@ -34,6 +34,9 @@ Selected widgets will be is hidden.
 3. Screen widget
 
 == Changelog ==
+
+= 1.0.1 =
+Bug fixes translation.
 
 = 1.0 =
 This is the initial release.
