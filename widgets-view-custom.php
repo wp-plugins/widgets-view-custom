@@ -3,7 +3,7 @@
 Plugin Name: Widgets view custom
 Description: Select only the widget you want to use, Customize the widgets list.
 Plugin URI: http://gqevu6bsiz.chicappa.jp
-Version: 1.0.1
+Version: 1.0.2
 Author: gqevu6bsiz
 Author URI: http://gqevu6bsiz.chicappa.jp/author/admin/
 Text Domain: widgets_view_custom
