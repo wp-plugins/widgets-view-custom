@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-03-26 12:13+0900\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: JAPAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Last-Translator: \n"
+
+msgid "Select only the widget you want to use, Customize the widgets list."
+msgstr "ウィジェットのカスタマイズ。多くなりすぎたウィジェットを使う項目だけすっきり表示。"
+
+msgid "Widgets view custom's setting"
+msgstr "ウィジェット表示カスタムの設定"
+
+msgid "Widgets to show"
+msgstr "表示するウィジェット"
+
+msgid "Widgets to hide"
+msgstr "非表示にするウィジェット"
+
+msgid "Please side by side by dragging."
+msgstr "ドラッグして並べて下さい。"
+
+msgid "Would initialize?"
+msgstr "初期化しますか？"
+
+msgid "Please donation."
+msgstr "寄付のお願い"
+
+msgid "You are contented with this plugin?<br />By the laws of Japan, Japan's new paypal user can not make a donation button.<br />So i would like you to buy this plugin as the replacement for the donation."
+msgstr "このプラグインを使って満足できましたか？<br />日本の法律では、日本の新PayPalユーザーは寄付ボタンを作成することはできません。<br />なので寄付の代わりとしてこのプラグインを購入して欲しいです。"
+
+msgid "Features"
+msgstr "機能について"
+
+msgid "Line Break First and End plugin is In the visual editor TinyMCE, It is a plugin that will help when you will not be able to enter a line break."
+msgstr "Line Break First and Endプラグインは、TinyMCEのビジュアルエディタで、改行を入力することが出来なくなった時に便利なプラグインです。"
+
+msgid "The primary use of donations"
+msgstr "寄付の主な使用目的"
+
+msgid "Liquidation of time and value"
+msgstr "時間と価値の清算"
+
+msgid "Additional suggestions feature"
+msgstr "機能提案の追加"
+
+msgid "Maintain motivation"
+msgstr "モチベーション維持"
+
+msgid "Ensure time as the father of Sunday"
+msgstr "日曜日の父親としての時間確保"
+
+msgid "About plugin"
+msgstr "プラグインについて"
+
+msgid "Version check"
+msgstr "動作確認済み"
+
+msgid "Developer's site"
+msgstr "開発者のサイト"
+
+msgid "Reviews"
+msgstr "レビュー"
+
+msgid "Useful plugins"
+msgstr "便利なプラグイン"
+
+msgid "Customize the list of the post and page. custom post type page, too. You can customize the column display items freely."
+msgstr "投稿と固定ページ一覧をカスタマイズします。カスタム投稿タイプも。カラム一覧を自由にカスタマイズできます。"
+
+msgid "Announce to display the dashboard. Change the display to a different user role."
+msgstr "ダッシュボードにお知らせを表示します。ユーザーの権限ごとに表示を変更できます。"
+
+msgid "Customize a variety of screen management."
+msgstr "管理画面の様々なカスタマイズ"
+

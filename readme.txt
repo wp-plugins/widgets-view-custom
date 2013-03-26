@@ -1,10 +1,10 @@
 === WIDGETS VIEW CUSTOM ===
 Contributors: gqevu6bsiz
-Donate link: 
+Donate link: http://gqevu6bsiz.chicappa.jp/please-donation/?utm_source=wporg&utm_medium=donate&utm_content=wvc&utm_campaign=1_1
 Tags: admin, widgets, widget, custom
-Requires at least: 3.4.1
-Tested up to: 3.5
-Stable tag: 1.0.2
+Requires at least: 3.4.2
+Tested up to: 3.5.1
+Stable tag: 1.1
 License: GPL2
 
 Select only the widget you want to use, Customize the widgets list.
@@ -34,6 +34,10 @@ Selected widgets will be is hidden.
 3. Screen widget
 
 == Changelog ==
+
+= 1.1 =
+Layout changes.
+To be able to quickly reset.
 
 = 1.0.2 =
 I've changed the readme.txt.
