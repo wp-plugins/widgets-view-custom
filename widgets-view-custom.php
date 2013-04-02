@@ -3,9 +3,9 @@
 Plugin Name: Widgets view custom
 Description: Select only the widget you want to use, Customize the widgets list.
 Plugin URI: http://wordpress.org/extend/plugins/widgets-view-custom/
-Version: 1.1
+Version: 1.1.1
 Author: gqevu6bsiz
-Author URI: http://gqevu6bsiz.chicappa.jp/?utm_source=use_plugin&utm_medium=list&utm_content=wvc&utm_campaign=1_1
+Author URI: http://gqevu6bsiz.chicappa.jp/?utm_source=use_plugin&utm_medium=list&utm_content=wvc&utm_campaign=1_1_1
 Text Domain: widgets_view_custom
 Domain Path: /languages
 */
@@ -28,7 +28,7 @@ Domain Path: /languages
 
 load_plugin_textdomain('widgets_view_custom', false, basename(dirname(__FILE__)).'/languages');
 
-define ('WIDGETS_VIEW_CUSTOM_VER', '1.1');
+define ('WIDGETS_VIEW_CUSTOM_VER', '1.1.1');
 define ('WIDGETS_VIEW_CUSTOM_PLUGIN_NAME', 'Widgets view custom');
 define ('WIDGETS_VIEW_CUSTOM_MANAGE_URL', admin_url('options-general.php').'?page=widgets_view_custom');
 define ('WIDGETS_VIEW_CUSTOM_RECORD_NAME', 'widget_view_custom');
@@ -59,9 +59,8 @@ add_action('admin_menu', 'widgets_view_custom_add_menu');
 
 
 // footer text
-add_filter( 'admin_footer_text' , 'widgets_view_custom_admin_footer_text' );
 function widgets_view_custom_admin_footer_text( $text ) {
-	$text = '<img src="' . WIDGETS_VIEW_CUSTOM_PLUGIN_DIR . 'images/gqevu6bsiz.png" width="18" /> Plugin developer : <a href="http://gqevu6bsiz.chicappa.jp/?utm_source=use_plugin&utm_medium=footer&utm_content=wvc&utm_campaign=1_1" target="_blank">gqevu6bsiz</a>';
+	$text = '<img src="' . WIDGETS_VIEW_CUSTOM_PLUGIN_DIR . 'images/gqevu6bsiz.png" width="18" /> Plugin developer : <a href="http://gqevu6bsiz.chicappa.jp/?utm_source=use_plugin&utm_medium=footer&utm_content=wvc&utm_campaign=1_1_1" target="_blank">gqevu6bsiz</a>';
 		
 	return $text;
 }
@@ -71,6 +70,8 @@ function widgets_view_custom_admin_footer_text( $text ) {
 
 // setting
 function widgets_view_custom_setting() {
+	add_filter( 'admin_footer_text' , 'widgets_view_custom_admin_footer_text' );
+
 	$UPFN = 'sett';
 	$Msg = '';
 
@@ -191,7 +192,7 @@ function widgets_view_custom_setting() {
 						<p style="color: #FFFFFF;"><?php _e( 'You are contented with this plugin?<br />By the laws of Japan, Japan\'s new paypal user can not make a donation button.<br />So i would like you to buy this plugin as the replacement for the donation.' , 'widgets_view_custom' ); ?></p>
 						<p>&nbsp;</p>
 						<p style="text-align: center;">
-							<a href="http://gqevu6bsiz.chicappa.jp/line-break-first-and-end/?utm_source=use_plugin&utm_medium=donate&utm_content=wvc&utm_campaign=1_1" class="button-primary" target="_blank">Line Break First and End</a>
+							<a href="http://gqevu6bsiz.chicappa.jp/line-break-first-and-end/?utm_source=use_plugin&utm_medium=donate&utm_content=wvc&utm_campaign=1_1_1" class="button-primary" target="_blank">Line Break First and End</a>
 						</p>
 						<p>&nbsp;</p>
 						<div class="donation_memo">
@@ -215,7 +216,7 @@ function widgets_view_custom_setting() {
 					<div class="inside">
 						<p><?php _e( 'Version check' , 'widgets_view_custom' ); ?> : 3.4.2 - 3.5.1</p>
 						<ul>
-							<li><a href="http://gqevu6bsiz.chicappa.jp/?utm_source=use_plugin&utm_medium=side&utm_content=wvc&utm_campaign=1_1" target="_blank"><?php _e( 'Developer\'s site' , 'widgets_view_custom' ); ?></a></li>
+							<li><a href="http://gqevu6bsiz.chicappa.jp/?utm_source=use_plugin&utm_medium=side&utm_content=wvc&utm_campaign=1_1_1" target="_blank"><?php _e( 'Developer\'s site' , 'widgets_view_custom' ); ?></a></li>
 							<li><a href="http://wordpress.org/support/plugin/widgets-view-custom" target="_blank"><?php _e( 'Support Forums' ); ?></a></li>
 							<li><a href="http://wordpress.org/support/view/plugin-reviews/widgets-view-custom" target="_blank"><?php _e( 'Reviews' , 'widgets_view_custom' ); ?></a></li>
 							<li><a href="https://twitter.com/gqevu6bsiz" target="_blank">twitter</a></li>
