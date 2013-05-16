@@ -3,7 +3,7 @@
 Plugin Name: Widgets view custom
 Description: Select only the widget you want to use, Customize the widgets list.
 Plugin URI: http://wordpress.org/extend/plugins/widgets-view-custom/
-Version: 1.1.1
+Version: 1.1.2
 Author: gqevu6bsiz
 Author URI: http://gqevu6bsiz.chicappa.jp/?utm_source=use_plugin&utm_medium=list&utm_content=wvc&utm_campaign=1_1_1
 Text Domain: widgets_view_custom
@@ -28,7 +28,7 @@ Domain Path: /languages
 
 load_plugin_textdomain('widgets_view_custom', false, basename(dirname(__FILE__)).'/languages');
 
-define ('WIDGETS_VIEW_CUSTOM_VER', '1.1.1');
+define ('WIDGETS_VIEW_CUSTOM_VER', '1.1.2');
 define ('WIDGETS_VIEW_CUSTOM_PLUGIN_NAME', 'Widgets view custom');
 define ('WIDGETS_VIEW_CUSTOM_MANAGE_URL', admin_url('options-general.php').'?page=widgets_view_custom');
 define ('WIDGETS_VIEW_CUSTOM_RECORD_NAME', 'widget_view_custom');
@@ -60,7 +60,7 @@ add_action('admin_menu', 'widgets_view_custom_add_menu');
 
 // footer text
 function widgets_view_custom_admin_footer_text( $text ) {
-	$text = '<img src="' . WIDGETS_VIEW_CUSTOM_PLUGIN_DIR . 'images/gqevu6bsiz.png" width="18" /> Plugin developer : <a href="http://gqevu6bsiz.chicappa.jp/?utm_source=use_plugin&utm_medium=footer&utm_content=wvc&utm_campaign=1_1_1" target="_blank">gqevu6bsiz</a>';
+	$text = '<img src="http://www.gravatar.com/avatar/7e05137c5a859aa987a809190b979ed4?s=18" width="18" /> Plugin developer : <a href="http://gqevu6bsiz.chicappa.jp/?utm_source=use_plugin&utm_medium=footer&utm_content=wvc&utm_campaign=1_1_1" target="_blank">gqevu6bsiz</a>';
 		
 	return $text;
 }
@@ -182,10 +182,26 @@ function widgets_view_custom_setting() {
 				</form>
 			</p>
 
+			<p><?php _e( 'Future, the function of this plugin will be integrated into this plug-in.' , 'widgets_view_custom' ); ?></p>
+			<p><strong><a href="http://wordpress.org/extend/plugins/post-lists-view-custom/" target="_blank">Post Lists View Custom</a></strong></p>
+
 		</div>
 		
 		<div class="postbox-container" id="postbox-container-2">
 			
+				<div class="stuffbox" id="usefulbox">
+					<h3><span class="hndle"><?php _e( 'Useful plugins' , 'widgets_view_custom' ); ?></span></h3>
+					<div class="inside">
+						<p><strong><a href="http://wordpress.org/extend/plugins/post-lists-view-custom/" target="_blank">Post Lists View Custom</a></strong></p>
+						<p class="description"><?php _e( 'Customize the list of the post and page. custom post type page, too. You can customize the column display items freely.' , 'widgets_view_custom' ); ?></p>
+						<p><strong><a href="http://wordpress.org/extend/plugins/announce-from-the-dashboard/" target="_blank">Announce from the Dashboard</a></strong></p>
+						<p class="description"><?php _e( 'Announce to display the dashboard. Change the display to a different user role.' , 'widgets_view_custom' ); ?></p>
+						<p><strong><a href="http://wordpress.org/extend/plugins/wp-admin-ui-customize/" target="_blank">WP Admin UI Customize</a></strong></p>
+						<p class="description"><?php _e( 'Customize a variety of screen management.' , 'widgets_view_custom' ); ?></p>
+						<p>&nbsp;</p>
+					</div>
+				</div>
+
 				<div class="stuffbox" id="donationbox">
 					<div class="inside">
 						<p style="color: #FFFFFF; font-size: 20px;"><?php _e( 'Please donation.' , 'widgets_view_custom' ); ?></p>
@@ -214,7 +230,7 @@ function widgets_view_custom_setting() {
 				<div class="stuffbox" id="aboutbox">
 					<h3><span class="hndle"><?php _e( 'About plugin' , 'widgets_view_custom' ); ?></span></h3>
 					<div class="inside">
-						<p><?php _e( 'Version check' , 'widgets_view_custom' ); ?> : 3.4.2 - 3.5.1</p>
+						<p><?php _e( 'Version check' , 'widgets_view_custom' ); ?> : 3.4.2 - 3.6 beta 3</p>
 						<ul>
 							<li><a href="http://gqevu6bsiz.chicappa.jp/?utm_source=use_plugin&utm_medium=side&utm_content=wvc&utm_campaign=1_1_1" target="_blank"><?php _e( 'Developer\'s site' , 'widgets_view_custom' ); ?></a></li>
 							<li><a href="http://wordpress.org/support/plugin/widgets-view-custom" target="_blank"><?php _e( 'Support Forums' ); ?></a></li>
@@ -222,19 +238,6 @@ function widgets_view_custom_setting() {
 							<li><a href="https://twitter.com/gqevu6bsiz" target="_blank">twitter</a></li>
 							<li><a href="http://www.facebook.com/pages/Gqevu6bsiz/499584376749601" target="_blank">facebook</a></li>
 						</ul>
-					</div>
-				</div>
-
-				<div class="stuffbox" id="usefulbox">
-					<h3><span class="hndle"><?php _e( 'Useful plugins' , 'widgets_view_custom' ); ?></span></h3>
-					<div class="inside">
-						<p><strong><a href="http://wordpress.org/extend/plugins/post-lists-view-custom/" target="_blank">Post Lists View Custom</a></strong></p>
-						<p class="description"><?php _e( 'Customize the list of the post and page. custom post type page, too. You can customize the column display items freely.' , 'widgets_view_custom' ); ?></p>
-						<p><strong><a href="http://wordpress.org/extend/plugins/announce-from-the-dashboard/" target="_blank">Announce from the Dashboard</a></strong></p>
-						<p class="description"><?php _e( 'Announce to display the dashboard. Change the display to a different user role.' , 'widgets_view_custom' ); ?></p>
-						<p><strong><a href="http://wordpress.org/extend/plugins/wp-admin-ui-customize/" target="_blank">WP Admin UI Customize</a></strong></p>
-						<p class="description"><?php _e( 'Customize a variety of screen management.' , 'widgets_view_custom' ); ?></p>
-						<p>&nbsp;</p>
 					</div>
 				</div>
 
